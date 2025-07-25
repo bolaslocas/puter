@@ -1,31 +1,27 @@
-# Misc
-.DS_Store
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Dependencies
-node_modules/
+# dependencies
+/node_modules
 
-*.zip
-*.tgz
-license.config.json
-license-header.txt
+# next.js
+/.next/
+/out/
 
-# Build Outputs
-dist/
+# production
+/build
 
-# VS Code IDE
-.vscode/**/*
-!.vscode/extensions.json
-!.vscode/launch.json
-!.vscode/tasks.json
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Local env files
-.env
-!.env.example
+# env files
+.env*
 
-# this is for jetbrain IDEs
-.idea/
-/puter
+# vercel
+.vercel
 
-# Local Netlify folder
-.netlify
-src/emulator/release/
+# typescript
+*.tsbuildinfo
+next-env.d.ts
